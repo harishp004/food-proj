@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient(to top right,rgb(50, 50, 50),rgb(188, 188, 188)) ;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            color: rgba(0, 0, 0, 0.834);
+        }
+        table{
+            height: 50vh;
+            border: 1px solid rgb(90, 90, 90);
+            border-radius: 10px;
+            padding: 3%;
+            background-color: rgba(240, 248, 255, 0.186);
+            box-shadow: 2px 2px 4px rgb(138, 138, 138);
+
+        }
+        input{
+            border-radius: 5px;
+            border: 1px solid rgb(98, 98, 98);
+        }
+        ::placeholder{
+            font-size: 11px;
+        }
+        #submit{
+            border-radius: 10px;
+            border: 1px solid rgb(58, 58, 58);
+            padding:5px 10px;
+            background-color: rgba(246, 246, 246, 0.622); 
+            cursor: pointer;
+        }
+        #gender{
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><label for="">Patient Name</label></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+
+        </tr>
+        <tr>
+            <td><label for="gender">Gender</label></d>
+            <td><input type="radio" name="gender" id="gender">Male</input>
+                <input type="radio" name="gender" id="gender">Female</input>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">date of birth</label></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="disease">Disease</label></td>
+            <td><input type="text" placeholder="Enter your disease"></td>
+        </tr>
+        <tr>
+            <td><label for="bp">BP</label></td>
+            <td><input type="number" placeholder="Enter your bp level"></td>
+        </tr>
+        <tr>
+            <td><label for="aciditylever">Acidity Level</label></td>
+            <td><input type="number" placeholder="Enter your Accidity level"></td>
+        </tr>
+       
+    </table><br><br>
+    <button id="submit">submit</button>
+
+</body>
+
+</html>
